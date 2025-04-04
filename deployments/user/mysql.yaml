@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: user-db
-          image: mariadb
+          image: mariadb:10.5
           env:
             - name: MYSQL_ALLOW_EMPTY_PASSWORD
               value: 'true'
