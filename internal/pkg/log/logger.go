@@ -83,7 +83,7 @@ func (l logger) Debugw(msg string, keysAndValues ...interface{}) {
 }
 
 func (l logger) Debugln(args ...interface{}) {
-	l.zapSugaredLogger.Debugln(args...)
+	l.zapSugaredLogger.Debug(args...)
 }
 
 func (l logger) Info(args ...interface{}) {
@@ -99,7 +99,7 @@ func (l logger) Infow(msg string, keysAndValues ...interface{}) {
 }
 
 func (l logger) Infoln(args ...interface{}) {
-	l.zapSugaredLogger.Infoln(args...)
+	l.zapSugaredLogger.Info(args...)
 }
 
 func (l logger) Warn(args ...interface{}) {
@@ -115,7 +115,7 @@ func (l logger) Warnw(msg string, keysAndValues ...interface{}) {
 }
 
 func (l logger) Warnln(args ...interface{}) {
-	l.zapSugaredLogger.Warnln(args...)
+	l.zapSugaredLogger.Warn(args...)
 }
 
 func (l logger) Error(args ...interface{}) {
@@ -131,7 +131,7 @@ func (l logger) Errorw(msg string, keysAndValues ...interface{}) {
 }
 
 func (l logger) Errorln(args ...interface{}) {
-	l.zapSugaredLogger.Errorln(args...)
+	l.zapSugaredLogger.Error(args...)
 }
 
 func (l logger) DPanic(args ...interface{}) {
@@ -147,7 +147,7 @@ func (l logger) DPanicw(msg string, keysAndValues ...interface{}) {
 }
 
 func (l logger) DPanicln(args ...interface{}) {
-	l.zapSugaredLogger.DPanicln(args...)
+	l.zapSugaredLogger.DPanic(args...)
 }
 
 func (l logger) Panic(args ...interface{}) {
@@ -163,7 +163,7 @@ func (l logger) Panicw(msg string, keysAndValues ...interface{}) {
 }
 
 func (l logger) Panicln(args ...interface{}) {
-	l.zapSugaredLogger.Panicln(args...)
+	l.zapSugaredLogger.Panic(args...)
 }
 
 func (l logger) Fatal(args ...interface{}) {
@@ -179,5 +179,5 @@ func (l logger) Fatalw(msg string, keysAndValues ...interface{}) {
 }
 
 func (l logger) Fatalln(args ...interface{}) {
-	l.zapSugaredLogger.Fatalln(args...)
+	l.zapSugaredLogger.Fatal(args...)
 }
